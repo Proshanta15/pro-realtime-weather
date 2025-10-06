@@ -10,7 +10,7 @@ function App() {
         <FavouriteProvider>
           <Header />
           <main>
-            <section className="flex justify-center h-[90vh] items-center">
+            <section className="flex justify-center h-[90vh] items-center mt-[70px]">
               <WeatherBoard />
             </section>
           </main>
