@@ -17,7 +17,7 @@ export default function WeatherHeadline() {
 
   const { climate, location, temperature, time } = weatherData;
 
-  function getWeatherClimate(climate) {
+  function getWeatherIcon(climate) {
     switch (climate) {
       case "Rain":
         return RainIcon;
@@ -44,7 +44,7 @@ export default function WeatherHeadline() {
   return (
     <div>
       <div className="max-md:flex items-center justify-between md:-mt-10">
-        <img src={getWeatherClimate(climate)} alt="Climate" />
+        <img src={getWeatherIcon(climate)} alt="Climate" />
         <div className="max-md:flex items-center max-md:space-x-4">
           <h1 className="text-[60px] lg:text-[80px] xl:text-[100px] leading-none md:mb-4">
             {Math.round(temperature)}°
