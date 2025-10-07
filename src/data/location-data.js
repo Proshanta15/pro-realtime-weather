@@ -29,6 +29,11 @@ const data = [
     latitude: 43.6534817,
     longitude: -79.3839347,
   },
+  {
+    location: "Japan",
+    latitude: 36.2048,
+    longitude: 138.2529,
+  },
 ];
 
 function getLocations() {

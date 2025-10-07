@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./components/header/Header";
-import WeatherBoard from "./components/weather/WeatherBoard";
+import Page from "./Page";
+
 import {
   FavouriteProvider,
   LocationProvider,
@@ -13,12 +13,7 @@ function App() {
       <LocationProvider>
         <WeatherProvider>
           <FavouriteProvider>
-            <Header />
-            <main>
-              <section className="flex justify-center h-[90vh] items-center mt-[70px]">
-                <WeatherBoard />
-              </section>
-            </main>
+            <Page />
           </FavouriteProvider>
         </WeatherProvider>
       </LocationProvider>
